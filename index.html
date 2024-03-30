@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bopotify</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="pictures/logo.png" alt="1">
+            <span>Bopotify</span>
+        </div>
+        <nav>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Latest Songs</a></li>
+            <li><a href="#">Old Songs</a></li>
+            <li id="new"><a href="#">Add Song</a></li>
+        </nav>
+        <div class="search"><input type="text" placeholder="Search a song"></div>
+    </header>
+    <div id="form">
+        <div id="cross">&#x2715;</div>
+        <h1>Add New Song Here!</h1>
+        <p>Note: Paste Song mp3 file to song folder in series (e.g 1.mp3 / 2.mp3 /.....)</p>
+        <form action="">
+            <input type="text" placeholder="Name of a song">
+            <input type="text" placeholder="Path of a song (e.g song/11.mp3)">
+            <input type="text" placeholder="Path of a cover picture (e.g cover/11.mp3)">
+            <button type="submit">submit</button>
+        </form>
+    </div>    
+    <div class="content">
+        <div class="song" id="0">
+            <div class="LogoImg">
+                <div class="img"><img src="pictures/logo.png" alt="1"></div>
+                <div class="name"></div>
+            </div>
+            <div class="dur">
+                <div class="duration">00:00</div>
+                <i class="fa fa-2x fa-play" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="song" id="1">
+            <div class="LogoImg">
+                <div class="img"><img src="pictures/logo.png" alt="1"></div>
+                <div class="name"></div>
+            </div>
+            <div class="dur">
+                <div class="duration">00:00</div>
+                <i class="fa fa-2x fa-play" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="song" id="2">
+            <div class="LogoImg">
+                <div class="img"><img src="pictures/logo.png" alt="1"></div>
+                <div class="name"></div>
+            </div>
+            <div class="dur">
+                <div class="duration">00:00</div>
+                <i class="fa fa-2x fa-play" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="song" id="3">
+            <div class="LogoImg">
+                <div class="img"><img src="pictures/logo.png" alt="1"></div>
+                <div class="name"></div>
+            </div>
+            <div class="dur">
+                <div class="duration">00:00</div>
+                <i class="fa fa-2x fa-play" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="song" id="4">
+            <div class="LogoImg">
+                <div class="img"><img src="pictures/logo.png" alt="1"></div>
+                <div class="name"></div>
+            </div>
+            <div class="dur">
+                <div class="duration">00:00</div>
+                <i class="fa fa-2x fa-play" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="song" id="5">
+            <div class="LogoImg">
+                <div class="img"><img src="pictures/logo.png" alt="1"></div>
+                <div class="name"></div>
+            </div>
+            <div class="dur">
+                <div class="duration">00:00</div>
+                <i class="fa fa-2x fa-play" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="song" id="6">
+            <div class="LogoImg">
+                <div class="img"><img src="pictures/logo.png" alt="1"></div>
+                <div class="name"></div>
+            </div>
+            <div class="dur">
+                <div class="duration">00:00</div>
+                <i class="fa fa-2x fa-play" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="song" id="7">
+            <div class="LogoImg">
+                <div class="img"><img src="pictures/logo.png" alt="1"></div>
+                <div class="name"></div>
+            </div>
+            <div class="dur">
+                <div class="duration">00:00</div>
+                <i class="fa fa-2x fa-play" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="song" id="8">
+            <div class="LogoImg">
+                <div class="img"><img src="pictures/logo.png" alt="1"></div>
+                <div class="name"></div>
+            </div>
+            <div class="dur">
+                <div class="duration">00:00</div>
+                <i class="fa fa-2x fa-play" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="song" id="9">
+            <div class="LogoImg">
+                <div class="img"><img src="pictures/logo.png" alt="1"></div>
+                <div class="name"></div>
+            </div>
+            <div class="dur">
+                <div class="duration">00:00</div>
+                <i class="fa fa-2x fa-play" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="song" id="10">
+            <div class="LogoImg">
+                <div class="img"><img src="pictures/logo.png" alt="1"></div>
+                <div class="name"></div>
+            </div>
+            <div class="dur">
+                <div class="duration">00:00</div>
+                <i class="fa fa-2x fa-play" aria-hidden="true"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="playArea">
+        <input type="range" id="pro" value="0" min="0" max="100">
+        <img src="gif/gif.gif" id="gif" alt="1">
+        <span id="TitleOfSong"></span>
+        <div id="time">00:00</div>
+        <div id="vol"><input type="range" id="vol1" value="100" min="0" max="100">
+            <div id="volNum">100%</div>
+        </div>
+        <div class="buttons">
+            <i class="fa fa-2x fa-step-backward" aria-hidden="true"></i>
+            <i class="fa fa-2x fa-play" id="playB" aria-hidden="true"></i>
+            <i class="fa fa-2x fa-step-forward" aria-hidden="true"></i>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/567ffb0715.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+body{
+    background: rgb(30, 30, 30);
+}
+*{
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: "Rubik", sans-serif;
+}
+header{
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bolder;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    width: 500px;
+}
+nav li{
+    list-style: none;
+    font-family: "Rubik", sans-serif;
+    padding: 20px;
+}
+nav li a{
+    text-decoration: none;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    margin: 5px;
+}
+.logo img{
+    width: 50px;
+    margin: 5px;
+}
+header input{
+    background: rgb(48, 48, 48);
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    padding: 5px 0;
+    width: 250px;
+    margin: 5px;
+    cursor: pointer;
+}
+.playArea{
+    position: fixed;
+    bottom: 1px;
+    width: 100%;
+    height: 70px;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.playArea input{
+    width: 80%;
+    cursor: pointer;
+}
+.buttons i{
+    margin: 0 10px;
+    cursor: pointer;
+}
+.playArea span{
+    position: absolute;
+    left: 12rem;
+    margin-top: 20px;
+}
+.playArea img{
+    position: absolute;
+    left: 9rem;
+    margin-top: 20px;
+    width: 40px;
+    transition: all 2s ease;
+    opacity: 0;
+}
+.content{
+    margin: auto;
+    width: 90%;
+    height: 80vh;
+}
+.content::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: url("https://img.freepik.com/free-vector/realistic-vector-background-music-notes-wave-background_134830-1438.jpg") center center/cover;
+    z-index: -1;
+}
+.song{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    background: black;
+    border-radius: 25px;
+    margin: 20px;
+    cursor: pointer;
+}
+.content img{
+    width: 50px;
+}
+.dur{
+    display: flex;
+    align-items: center;
+}
+.dur i{
+    margin:0 10px;
+}
+.LogoImg{
+    display: flex;
+    align-items: center;
+}
+.LogoImg div{
+    margin: 5px;
+}
+#time{
+    position: absolute;
+    bottom: 20px;
+    right: 150px;
+}
+#new{
+    background: rgb(20, 126, 54);
+}
+#volNum{
+    margin: 2px;
+    width: 35px;
+}
+#vol{
+    position: absolute;
+    bottom: 20px;
+    right: 250px;
+    display: flex;
+    background: rgb(83, 75, 75);
+    border-radius: 25px;
+}
+/* form */
+#cross{
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    background: black;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#form{
+    position: relative;
+    margin: 20px auto;
+    width: 80%;
+    height: 80vh;
+    background: black;
+    border-radius: 25px;
+    box-shadow: 0 0 1000px rgb(62, 61, 61);
+    display: none;
+    border: 2px solid white;
+    color: white;
+}
+#form h1{
+    margin: 10px 30px;
+}
+#form p{
+    margin: 10px 30px;
+}
+#form form{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 80%;
+}
+#form form input{
+    width: 50%;
+    height: 30px;
+    padding: 0 10px;
+    margin: 10px 30px;
+    color: black;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+}
+#form form button{
+    width: 20%;
+    height: 40px;
+    margin: 30px 30px;
+    font-size: 30px;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    background: transparent;
+    box-shadow: 0 0 10px white;
+    font-family: "Rubik", sans-serif;
+}
